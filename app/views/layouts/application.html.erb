@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanjadid</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script src="https://kit.fontawesome.com/c14add85a4.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+      <%= link_to "#", class: "navbar-brand" do %>
+          <img id="logovanjadid" src="https://res.cloudinary.com/dpwhjxnci/image/upload/v1569955148/logovanjadid_uybtef.png">
+        <% end %>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item nav-link" >
+            <i class="fas fa-envelope nav-icon" type="button" data-toggle="modal" data-target="#mailModal"></i>
+          </li>
+          <li class="nav-item nav-link">
+            <i class="fas fa-mobile-alt nav-icon" type="button" data-toggle="modal" data-target="#phoneModal"></i>
+          </li><li class="nav-item nav-link">
+            <%= link_to "https://www.instagram.com/vanjadid/" do %>
+              <i class="fab fa-instagram nav-icon"></i>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <%= yield %>
+  </body>
+</html>

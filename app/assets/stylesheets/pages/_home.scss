@@ -1,0 +1,38 @@
+// Specific CSS for your home-page
+
+#logovanjadid {
+  width: 30% !important;
+  height: 30% !important;
+
+}
+
+
+@media (max-width: 1250px) {
+  #logovanjadid {
+    display:none;
+  }
+
+  .navbar-nav .nav-link {
+    text-align: right;
+    padding-right: 8px;
+  }
+}
+
+
+
+.nav-icon {
+     color: black;
+     font-size: 24px;
+     margin-top: 5px;
+     margin-left: 8px;
+     margin-right: 8px;
+ }
+
+ .nav-icon:hover {
+      color: orange;
+ }
+
+
+#main-pic {
+  width: 100% !important;
+}
